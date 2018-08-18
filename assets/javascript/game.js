@@ -13,9 +13,6 @@ document.onkeyup = function (event) {
 
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-    console.log(computerGuess);
-    // guessletters.push(userGuess);
-
     if ((userGuess === "a") || (userGuess === "b") || (userGuess === "c") || (userGuess === "d") || (userGuess === "e") || (userGuess === "f") || (userGuess === "g") || (userGuess === "h") || (userGuess === "i") || (userGuess === "j") || (userGuess === "k") || (userGuess === "l") || (userGuess === "m") || (userGuess === "n") || (userGuess === "o") || (userGuess === "p") || (userGuess === "q") || (userGuess === "r") || (userGuess === "s") || (userGuess === "t") || (userGuess === "u") || (userGuess === "v") || (userGuess === "w") || (userGuess === "x") || (userGuess === "y") || (userGuess === "z")) {
         
         guessletters.push(userGuess);
@@ -26,10 +23,12 @@ document.onkeyup = function (event) {
             wins++;
             guess = 9;
             guessletters.length = 0;
+            alert("You Win");
         } else if (guess === 0) {
             losses++;
             guess = 9;
             guessletters.length = 0;
+            alert("You Lose");
         }
 
 

@@ -17,3 +17,9 @@ body {
     font-size:30px;
     text-align: center;
 }
+
+#game {
+    color: white;
+    font-size:25px;
+    text-shadow: 1px 1px red;
+}
